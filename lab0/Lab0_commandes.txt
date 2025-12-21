@@ -1,0 +1,15 @@
+# Lab0 - Installation Hadoop avec Docker
+
+# Démarrage Hadoop
+./start-hadoop.sh
+
+# HDFS commands
+hadoop fs -mkdir input
+hadoop fs -ls
+hadoop fs -put /shared_volume/purchases.txt .
+hadoop fs -cat purchases.txt
+hadoop fs -rm purchases.txt
+hadoop fs -cp /shared_volume/purchases.txt ./input
+hadoop fs -chmod 777 ./input/purchases.txt
+hadoop fs -get ./input/purchases.txt /shared_volume/achat.txt
+hadoop fs -cp ./input/purchases.txt ./purchases.txt
