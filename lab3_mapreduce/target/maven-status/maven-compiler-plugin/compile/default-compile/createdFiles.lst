@@ -1,0 +1,4 @@
+edu\supmti\hadoop\mapreduce\WCReducer.class
+edu\supmti\hadoop\mapreduce\Main.class
+edu\supmti\hadoop\mapreduce\WcJob.class
+edu\supmti\hadoop\mapreduce\WCMapper.class
